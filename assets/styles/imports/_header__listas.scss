@@ -52,6 +52,9 @@ header{
         font-size: 12px;
         line-height: 15px;
         margin: 0px 5px;
+        &:hover, &:focus{
+            color: inherit;
+        }
         img{
             margin-right: 5px;
         }

@@ -254,6 +254,22 @@
   outline: none;
 }
 
+.audio .herramientas h5 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C5C5C5;
+}
+
+.audio .herramientas p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #DDDDDD;
+}
+
 .audio .herramientas .obtener {
   background-color: #2A2A2A;
   border-radius: 12px;
@@ -267,6 +283,20 @@
   min-height: 40px;
   padding: 5px 10px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.audio .herramientas .obtener img {
+  margin-left: 5px;
+  margin-top: 2px;
 }
 
 header {
@@ -340,6 +370,10 @@ header a {
   font-size: 12px;
   line-height: 15px;
   margin: 0px 5px;
+}
+
+header a:hover, header a:focus {
+  color: inherit;
 }
 
 header a img {
@@ -685,6 +719,23 @@ body .body .detalles .filtros .accordion-button::after {
   height: 20px;
 }
 
+body .body .detalles .enlaces a {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B2B2B2;
+  padding: 7px 0px;
+}
+
+body .body .detalles .enlaces a:hover, body .body .detalles .enlaces a:focus {
+  color: inherit;
+}
+
+body .body .titulo .borde {
+  border-bottom: 1px solid #222222;
+}
+
 body .body .titulo h4 {
   font-family: 'Inter';
   font-weight: 400;
@@ -707,6 +758,33 @@ body .body .titulo .botones__herramientas .accordion-button {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-color: transparent;
+  box-shadow: none;
+  width: 100%;
+  padding: 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .body .titulo .botones__herramientas .accordion-button::after {
+  background-image: url("../img/audios_icons/arrow__abajo.svg");
+  height: 12px;
+  width: 25px;
+}
+
+body .body .titulo .botones__herramientas .accordion-button p {
+  text-align: center;
+  width: 100%;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #7D7D7D;
 }
 
 body .body .titulo .botones__herramientas .accordion-item {
@@ -714,20 +792,113 @@ body .body .titulo .botones__herramientas .accordion-item {
   border: none;
   border-radius: 13px;
   text-align: center;
+  position: relative;
 }
 
-body .body .titulo .botones__herramientas .accordion-button {
+body .body .titulo .botones__herramientas .accordion-item .accordion-collapse {
+  background-color: transparent;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+}
+
+body .body .titulo .botones__herramientas .accordion-item .accordion-collapse div {
+  background-color: #181818;
+  margin: 15px 0px;
+  border-radius: 13px;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .body .titulo .botones__herramientas .accordion-item .accordion-collapse div p {
   font-family: 'Inter';
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   text-align: center;
   color: #7D7D7D;
+}
+
+body .body .titulo .playlists h2 {
+  padding: 0;
+}
+
+body .body .titulo .playlists .accordion-item {
   background-color: transparent;
+}
+
+body .body .titulo .playlists .accordion-item a {
+  color: #DDDDDD;
+  text-decoration: none;
+}
+
+body .body .titulo .playlists .accordion-item .accordion-button {
+  background-color: #181818;
+  border-radius: 15px;
+  margin: 10px 0px;
+  border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  width: 100%;
-  padding: 10px 15px;
+  outline: none;
+  min-height: 70px;
+}
+
+body .body .titulo .playlists .accordion-item .accordion-button::after {
+  content: none;
+}
+
+body .body .titulo .playlists .accordion-item .accordion-button h4 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #DDDDDD;
+  padding: 0px 25px;
+}
+
+body .body .titulo .playlists .accordion-item .accordion-button button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FF997D;
+}
+
+body .body .titulo .playlists .accordion-item .accordion-collapse {
+  padding: 0;
+  background-color: transparent;
+}
+
+body .body .titulo .playlists .accordion-item .accordion-collapse .accordion-body {
+  padding: 0;
+}
+
+body .body .titulo .playlists .accordion-item .accordion-collapse .div {
+  background-color: #181818;
+  border-radius: 15px;
+  height: 80px;
+  padding: 15px 25px;
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .body .audio .titulo button {

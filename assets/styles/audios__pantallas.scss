@@ -167,8 +167,24 @@ body{
                     height: 20px;
                 }
             }
+            .enlaces{
+                a{
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #B2B2B2;
+                    padding: 7px 0px;
+                    &:hover, &:focus{
+                        color: inherit;
+                    }
+                }
+            }
         }
         .titulo{
+            .borde{
+                border-bottom: 1px solid #222222;
+            }
             h4{
                 font-family: 'Inter';
                 font-weight: 400;
@@ -189,24 +205,116 @@ body{
                     border: none;
                     outline: none;
                     box-shadow: none;
+                    background-color: transparent;
+                    box-shadow: none;
+                    width: 100%;
+                    padding: 15px 15px;
+                    display: flex;
+                    align-items: center;
+                    &::after{
+                        background-image: url('../img/audios_icons/arrow__abajo.svg');
+                        height: 12px;
+                        width: 25px;
+                    }
+                    p{
+                        text-align: center;
+                        width: 100%;
+                        font-family: 'Inter';
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-align: center;
+                        color: #7D7D7D;
+                    }
                 }
                 .accordion-item {
                     background-color: #181818;
                     border: none;
                     border-radius: 13px;;
                     text-align: center;
+                    position: relative;
+                    .accordion-collapse{
+                        background-color: transparent;
+                        position: absolute;
+                        z-index: 3;
+                        width: 100%;
+                        div{
+                            background-color: #181818;
+                            margin: 15px 0px;
+                            border-radius: 13px;
+                            min-height: 80px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            p{
+                                font-family: 'Inter';
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 15px;
+                                text-align: center;
+                                color: #7D7D7D;
+                            }
+                        }
+                    }
                 }
-                .accordion-button {
-                    font-family: 'Inter';
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 15px;
-                    text-align: center;
-                    color: #7D7D7D;
+            }
+            .playlists{
+                h2{
+                    padding: 0;
+                }
+                .accordion-item {
                     background-color: transparent;
-                    box-shadow: none;
-                    width: 100%;
-                    padding: 10px 15px;
+                    a{
+                        color: #DDDDDD;
+                        text-decoration: none;
+                    }
+                    .accordion-button{
+                        background-color: #181818;
+                        border-radius: 15px;
+                        margin: 10px 0px;
+                        border: none;
+                        box-shadow: none;
+                        outline: none;
+                        min-height: 70px;
+                        &::after{
+                            content: none;
+                        }
+                        h4{
+                            font-family: 'Inter';
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #DDDDDD;
+                            padding: 0px 25px;
+                        }
+                        button{
+                            border: none;
+                            background-color: transparent;
+                            outline: none;
+                            font-family: 'Inter';
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #FF997D;
+                        }
+                    }
+                    .accordion-collapse{
+                        padding: 0;
+                        background-color: transparent;
+                        .accordion-body{
+                            padding: 0;
+                        }
+                        .div{
+                            background-color: #181818;
+                            border-radius: 15px;
+                            height: 80px;
+                            padding: 15px 25px;
+                            margin: 20px 0px;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                        }
+                    }
                 }
             }
         }

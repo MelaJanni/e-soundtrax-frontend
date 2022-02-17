@@ -254,6 +254,22 @@
   outline: none;
 }
 
+.audio .herramientas h5 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C5C5C5;
+}
+
+.audio .herramientas p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #DDDDDD;
+}
+
 .audio .herramientas .obtener {
   background-color: #2A2A2A;
   border-radius: 12px;
@@ -267,6 +283,20 @@
   min-height: 40px;
   padding: 5px 10px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.audio .herramientas .obtener img {
+  margin-left: 5px;
+  margin-top: 2px;
 }
 
 .footer {
@@ -448,6 +478,10 @@
   font-size: 12px;
   line-height: 15px;
   margin: 0px 5px;
+}
+
+.container-fluid header a:hover, .container-fluid header a:focus {
+  color: inherit;
 }
 
 .container-fluid header a img {
