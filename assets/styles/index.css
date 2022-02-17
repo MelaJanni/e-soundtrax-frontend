@@ -166,6 +166,213 @@
   padding: 10px 0px;
 }
 
+.audio {
+  background-color: #232323;
+  border-radius: 15px;
+  min-height: 70px;
+  margin: 10px 0px;
+}
+
+.audio .titulo button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 50px;
+}
+
+.audio .titulo h2 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #DDDDDD;
+  padding-left: 15px;
+}
+
+.audio .descripcion button {
+  background-color: #3A3A3A;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  outline: none;
+  min-height: 25px;
+}
+
+.audio .descripcion button p + img {
+  margin-left: 5px;
+}
+
+.audio .descripcion button p {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #9B9B9B;
+}
+
+.audio .descripcion h4 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #989898;
+  margin-left: 15px;
+}
+
+.audio .descripcion h5 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #DDDDDD;
+}
+
+.audio .herramientas {
+  position: relative;
+}
+
+.audio .herramientas a {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #6F6F6F;
+  text-decoration: underline;
+}
+
+.audio .herramientas button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.audio .herramientas .obtener {
+  background-color: #2A2A2A;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 153, 125, 0.3);
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #B6B6B6;
+  min-height: 40px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.footer {
+  background-color: #181818;
+  min-height: 280px;
+}
+
+.footer .borde__bottom {
+  border-bottom: 1px solid #494949;
+}
+
+.footer .info a {
+  width: 100%;
+}
+
+.footer .info .logo {
+  height: 70px;
+  width: 70px;
+}
+
+.footer .info .titulo {
+  height: 20px;
+}
+
+.footer .info .idioma .col {
+  max-width: 9%;
+}
+
+.footer .info .idioma .borde {
+  border-right: 2px solid #C1BCBC;
+}
+
+.footer .info .idioma p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #6E6E6E;
+}
+
+.footer .info .idioma .active {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E2E2E2;
+}
+
+.footer .info .plataformas a {
+  width: 32px !important;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2D2D2D;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.footer .info .plataformas a:first-child {
+  margin: 0;
+}
+
+.footer .generos h2 {
+  font-family: 'Söhne Breit';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #C8C8C8;
+}
+
+.footer .generos a {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6F6F;
+  padding-bottom: 10px;
+}
+
+.footer .copy p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #6E6E6E;
+  margin: 0px 10px;
+}
+
+.footer .copy p:first-child {
+  margin-left: 0;
+}
+
+.footer .copy span {
+  height: 100%;
+  width: 2px;
+  background-color: #6E6E6E;
+}
+
 .container-fluid {
   background-color: #0F0F0F;
 }
@@ -475,108 +682,6 @@
           align-items: center;
 }
 
-.container-fluid .contendor__gris .audios .audio {
-  background-color: #232323;
-  border-radius: 15px;
-  min-height: 70px;
-  margin: 10px 0px;
-}
-
-.container-fluid .contendor__gris .audios .audio .titulo button {
-  border: none;
-  background-color: transparent;
-  outline: none;
-}
-
-.container-fluid .contendor__gris .audios .audio .titulo h2 {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #DDDDDD;
-  padding-left: 35px;
-}
-
-.container-fluid .contendor__gris .audios .audio .descripcion button {
-  background-color: #3A3A3A;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  outline: none;
-  min-height: 25px;
-}
-
-.container-fluid .contendor__gris .audios .audio .descripcion button p + img {
-  margin-left: 5px;
-}
-
-.container-fluid .contendor__gris .audios .audio .descripcion button p {
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  color: #9B9B9B;
-}
-
-.container-fluid .contendor__gris .audios .audio .descripcion h4 {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #989898;
-  margin-left: 15px;
-}
-
-.container-fluid .contendor__gris .audios .audio .descripcion h5 {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #DDDDDD;
-}
-
-.container-fluid .contendor__gris .audios .audio .herramientas {
-  position: relative;
-}
-
-.container-fluid .contendor__gris .audios .audio .herramientas a {
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
-  color: #6F6F6F;
-  text-decoration: underline;
-}
-
-.container-fluid .contendor__gris .audios .audio .herramientas button {
-  border: none;
-  background-color: transparent;
-  outline: none;
-}
-
-.container-fluid .contendor__gris .audios .audio .herramientas .obtener {
-  background-color: #2A2A2A;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 153, 125, 0.3);
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #B6B6B6;
-  min-height: 40px;
-  padding: 5px 10px;
-  width: 100%;
-}
-
 .container-fluid .contendor__gris .explorar {
   padding-top: 50px;
 }
@@ -786,109 +891,5 @@
   line-height: 29px;
   text-align: center;
   color: #171717;
-}
-
-.container-fluid .footer {
-  background-color: #181818;
-  min-height: 280px;
-}
-
-.container-fluid .footer .borde__bottom {
-  border-bottom: 1px solid #494949;
-}
-
-.container-fluid .footer .info a {
-  width: 100%;
-}
-
-.container-fluid .footer .info .logo {
-  height: 70px;
-  width: 70px;
-}
-
-.container-fluid .footer .info .titulo {
-  height: 20px;
-}
-
-.container-fluid .footer .info .idioma .col {
-  max-width: 9%;
-}
-
-.container-fluid .footer .info .idioma .borde {
-  border-right: 2px solid #C1BCBC;
-}
-
-.container-fluid .footer .info .idioma p {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #6E6E6E;
-}
-
-.container-fluid .footer .info .idioma .active {
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #E2E2E2;
-}
-
-.container-fluid .footer .info .plataformas a {
-  width: 32px !important;
-  height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #2D2D2D;
-  border-radius: 50%;
-  margin: 0px 10px;
-}
-
-.container-fluid .footer .info .plataformas a:first-child {
-  margin: 0;
-}
-
-.container-fluid .footer .generos h2 {
-  font-family: 'Söhne Breit';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #C8C8C8;
-}
-
-.container-fluid .footer .generos a {
-  text-decoration: none;
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6F6F6F;
-  padding-bottom: 10px;
-}
-
-.container-fluid .footer .copy p {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #6E6E6E;
-  margin: 0px 10px;
-}
-
-.container-fluid .footer .copy p:first-child {
-  margin-left: 0;
-}
-
-.container-fluid .footer .copy span {
-  height: 100%;
-  width: 2px;
-  background-color: #6E6E6E;
 }
 /*# sourceMappingURL=index.css.map */

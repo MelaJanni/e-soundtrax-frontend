@@ -1,0 +1,227 @@
+@import "imports/styles";
+@import "imports/playlists";
+@import "imports/audios";
+@import "imports/header__listas";
+
+body{
+    background-color: #0F0F0F;
+    header{
+        background-color: #171717;
+    }
+    .body{
+        .detalles{
+            a{  text-decoration: none;
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #989898;
+            }
+            .btn{
+                border-radius: 16px;
+                border: 1px solid #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    margin-right: 5px;
+                }
+            }
+            p{
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: #989898;
+            }
+            img + p{
+                margin-left: 5px;
+            }
+            .filtros{
+                .accordion-button {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    padding: 15px;
+                    background-color: #0F0F0F;
+                    border: none;
+                    border-radius: none;
+                    outline: none;
+                    font-family: 'Inter';
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #B2B2B2;
+                    box-shadow: none;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                .accordion-item {
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                }
+                .accordion-body {
+                    background-color: #181818;
+                    border-radius: 15px;
+                    border: none;
+                    margin: 15px 0px;
+                    height: 280px;
+                }
+                .contenedor{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    width: 100%;
+                    max-height: 250px;
+                    overflow: scroll;
+                    overflow-x: hidden;
+                    position: relative;
+                    &::-webkit-scrollbar{
+                        -webkit-appearance: none;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background: transparent;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: #363636;
+                        box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.75);
+                        border-radius: 16px;
+                    }
+                    &::-webkit-scrollbar {
+                        width: 7px;
+                        
+                    }
+                    input[type=checkbox] {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        border: 1px solid #9E9E9E;
+                        height: 15px;
+                        width: 15px;
+                        position: relative;
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::before{
+                            content: '+';
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            opacity: 2;
+                            display: none;
+                            justify-content: center;
+                            align-items: center;
+                            color: #717171;
+                            font-size: 18px;
+                        }
+                    }
+                    label {
+                        font-family: 'Inter';
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #717171;
+                        padding-left: 10px;
+                    }
+                    input[type=checkbox]:checked::before {
+                        display: flex;
+                    }
+                    div{
+                        padding: 7px 0px;
+                        &:first-child{
+                            padding-top: 20px;
+                        }
+                    }
+                }
+                .accordion-button:not(.collapsed)::after {
+                    content: '-';
+                    background-image: none;
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 42px;
+                    line-height: 29px;
+                    color: #9F9F9F;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 20px;
+                }
+                .accordion-button::after {
+                    flex-shrink: 0;
+                    margin-left: auto;
+                    transition: transform .2s ease-in-out;
+                    content: '+';
+                    background-image: none;
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 42px;
+                    line-height: 29px;
+                    color: #9F9F9F;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 20px;
+                }
+            }
+        }
+        .titulo{
+            h4{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #989898;
+            }
+            h3{
+                font-family: 'Söhne Breit';
+                font-size: 34px;
+                line-height: 88%;
+                letter-spacing: -0.02em;
+                color: #DDDDDD;
+            }
+            .botones__herramientas{
+                .accordion-button{
+                    background-color: #181818;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                }
+                .accordion-item {
+                    background-color: #181818;
+                    border: none;
+                    border-radius: 13px;;
+                    text-align: center;
+                }
+                .accordion-button {
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-align: center;
+                    color: #7D7D7D;
+                    background-color: transparent;
+                    box-shadow: none;
+                    width: 100%;
+                    padding: 10px 15px;
+                }
+            }
+        }
+        .audio{
+            .titulo{
+                button{
+                    width: 50px;
+                }
+            }
+            .herramientas{
+                .obtener{
+                    min-width: 170px;
+                    margin: 0px 15px;
+                }
+            }
+        }
+    }
+}

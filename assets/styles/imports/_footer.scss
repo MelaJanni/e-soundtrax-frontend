@@ -1,0 +1,90 @@
+.footer{
+    background-color: #181818;
+    min-height: 280px;
+    .borde__bottom{
+        border-bottom: 1px solid #494949;
+    }
+    .info{
+        a{
+            width: 100%;
+        }
+        .logo{
+            height: 70px;
+            width: 70px;
+        }
+        .titulo{
+            height: 20px;
+        }
+        .idioma{
+            .col{
+                max-width: 9%;
+            }
+            .borde{
+                border-right: 2px solid #C1BCBC;
+            }
+            p{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #6E6E6E;
+            }
+            .active{
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: #E2E2E2;
+            }
+        }
+        .plataformas{
+            a{  width: 32px !important;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #2D2D2D;
+                border-radius: 50%;
+                margin: 0px 10px;
+                &:first-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .generos{
+        h2{
+            font-family: 'Söhne Breit';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #C8C8C8;
+        }
+        a{  text-decoration: none;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6F6F;
+            padding-bottom: 10px;
+        }
+    }
+    .copy{
+        p{
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #6E6E6E;
+            margin: 0px 10px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+        span{
+            height: 100%;
+            width: 2px;
+            background-color:  #6E6E6E;
+        }
+    }
+}

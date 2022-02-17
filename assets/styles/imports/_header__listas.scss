@@ -1,0 +1,122 @@
+header{
+    background-color: #0F0F0F;
+    min-height: 70px;
+    ul{
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        li{
+            color: var(--gris__header);
+            margin: 0px 15px;
+            img{
+                margin-left: 5px;
+            }
+            ul{
+                background-color: #171717;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.79);
+                border-radius: 0px 0px 22px 22px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 120%;
+                min-height: 70%;
+                min-height: 300px;
+                width: 100%;
+                min-width: 900px;
+                display: none;
+                z-index: 2;
+                .col-2{
+                    height: 100%;
+                    li{
+                        padding: 10px 5px;
+                    }
+                }
+            }
+            &:hover, &:focus{
+                ul{
+                    display: flex;
+                    transition: ease 0.5s;
+                }
+            }
+        }
+    }
+    a{
+        color: var(--gris__a);
+        text-decoration: none;
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        margin: 0px 5px;
+        img{
+            margin-right: 5px;
+        }
+    }
+    span{
+        height: 20px;
+        width: 1px;
+        background-color: #363535;
+        margin: 0px 20px;
+    }
+    .empezar{
+        background: rgba(221, 221, 221, 0.1);
+        border-radius: 16px;
+        height: 40px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #989898;
+        &::before{
+            content: '';
+            position: absolute;
+            border: inherit;
+            border-image:linear-gradient(180deg, #FF997D 0%, #6CD5CE 100%);
+        }
+
+    }
+    .busqueda{
+        background-color: #262626;
+        border-radius: 10px;
+        height: 40px;
+        min-width: 300px;
+        input{
+            border: none;
+            background-color: transparent;
+            outline: none;
+            width: 90%;
+            padding-left: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: 'Inter';
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            color: #6D6868;
+            height: 100%;
+            &::placeholder{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-family: 'Inter';
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 15px;
+                color: #6D6868;
+            }
+        }
+        button{
+            border: none;
+            background-color: transparent;
+            outline: none;
+            width: 20%;
+            height: 25px;
+        }
+    }
+}

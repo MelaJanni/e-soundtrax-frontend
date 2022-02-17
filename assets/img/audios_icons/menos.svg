@@ -1,0 +1,17 @@
+/* _ */
+
+position: absolute;
+left: 89.47%;
+right: 0%;
+top: -2.33%;
+bottom: 95.02%;
+
+/* Subtitulo 01/Regular */
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+
+color: #9F9F9F;
+
