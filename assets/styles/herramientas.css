@@ -561,4 +561,305 @@ body .licencia .boton a {
 body .licencia .boton a:hover, body .licencia .boton a:focus {
   color: #545454;
 }
+
+body .ayuda h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #171717;
+}
+
+body .ayuda .busqueda {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  height: 50px;
+}
+
+body .ayuda .busqueda input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: #171717;
+  font-size: 14px;
+}
+
+body .ayuda .busqueda button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+body .ayuda .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+body .ayuda .accordion-item a {
+  color: #DDDDDD;
+  text-decoration: none;
+}
+
+body .ayuda .accordion-item .accordion-button:first-of-type {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+body .ayuda .accordion-item .accordion-button {
+  background-color: #181818;
+  border-radius: 15px;
+  margin: 10px 0px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  min-height: 70px;
+}
+
+body .ayuda .accordion-item .accordion-button::after {
+  content: none;
+}
+
+body .ayuda .accordion-item .accordion-button h4 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #DDDDDD;
+  padding: 0px 25px;
+}
+
+body .ayuda .accordion-item .accordion-button button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FF997D;
+}
+
+body .ayuda .accordion-item .accordion-collapse {
+  padding: 0;
+  background-color: transparent;
+}
+
+body .ayuda .accordion-item .accordion-collapse .accordion-body {
+  padding: 0;
+}
+
+body .ayuda .accordion-item .accordion-collapse .div {
+  background-color: #171717;
+  border-radius: 15px;
+  height: 80px;
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .ayuda .detalles h2 {
+  font-family: 'Söhne Breit';
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #171717;
+  padding: 20px 0px;
+}
+
+body .ayuda .detalles p {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #676767;
+  padding: 20px 0px;
+}
+
+body .ayuda .detalles .div {
+  margin: 10px 0px;
+}
+
+body .ayuda .detalles .div span {
+  background-color: #000000;
+  border-radius: 10px;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  body .ayuda .detalles .div span {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+body .ayuda .detalles .div p {
+  margin-left: 15px;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+  min-width: 70px;
+}
+
+body .ayuda .detalles .btn {
+  padding: 30px 0px;
+}
+
+body .ayuda .detalles .btn button {
+  background-color: #171717;
+  border-radius: 16px;
+  height: 50px;
+  width: 90%;
+  outline: none;
+  border: none;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F5F5F5;
+}
+
+@media (min-width: 992px) {
+  body .ayuda .detalles {
+    min-height: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px 45px;
+  }
+  body .ayuda .detalles h2 {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #676767;
+    width: 100%;
+    text-align: left;
+    max-width: 60%;
+  }
+  body .ayuda .detalles p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #676767;
+    max-width: 60%;
+  }
+  body .ayuda .detalles button {
+    max-width: 40%;
+  }
+}
+
+body .ayuda .acuerdo {
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 31px;
+  padding: 80px 45px;
+}
+
+body .ayuda .acuerdo h2 {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  padding: 30px 0px;
+}
+
+body .ayuda .acuerdo h3 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #686868;
+  padding: 15px 0px;
+}
+
+body .ayuda .acuerdo input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #DDDDDD;
+  border-radius: 16px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #686868;
+  padding-left: 15px;
+  width: 100%;
+  min-height: 50px;
+}
+
+body .ayuda .acuerdo input::-webkit-input-placeholder {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #686868;
+}
+
+body .ayuda .acuerdo input:-ms-input-placeholder {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #686868;
+}
+
+body .ayuda .acuerdo input::-ms-input-placeholder {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #686868;
+}
+
+body .ayuda .acuerdo input::placeholder {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #686868;
+}
+
+body .ayuda .acuerdo button {
+  background-color: #171717;
+  border-radius: 16px;
+  height: 50px;
+  outline: none;
+  border: none;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F5F5F5;
+  margin: 30px 0px;
+  min-width: 150px;
+}
 /*# sourceMappingURL=herramientas.css.map */

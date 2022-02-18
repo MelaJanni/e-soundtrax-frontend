@@ -1,0 +1,234 @@
+@import "imports/styles";
+@import "imports/header__listas";
+body{
+    background-color: #0F0F0F;
+    .titulo{
+        h2{
+            font-family: 'Söhne Breit';
+            font-size: 24px;
+            line-height: 21px;
+            text-align: center;
+            color: #D4D4D4;
+        }
+    }
+    .detalles__plan{
+        
+        h3{
+            font-family: 'Söhne Breit';
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+        button{
+            border: none;
+            background-color: transparent;
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: right;
+            color: #FF5B2B;
+            height: 40px;
+            width: 150px;
+        }
+        p{
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 13px;
+            color: #E9E9E9;
+        }
+        h4{
+            font-family: 'Söhne Breit';
+            font-size: 24px;
+            line-height: 21px;
+            color: #E9E9E9;
+        }
+        h5{
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #838383;
+            padding: 10px 0px;
+        }
+        .gris{
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #838383;
+            padding: 10px 0px;
+        }
+    }
+    .borde{
+        border-bottom: 1px solid #494949;
+    }
+    .incluidos{
+        span{
+            padding: 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #E2E2E2;
+                padding-left: 10px;
+            }
+        }
+    }
+    .total{
+        padding: 20px 0px;
+        h3{
+            font-family: 'Söhne Breit';
+            font-size: 18px;
+            line-height: 21px;
+            color: #A7A7A7;
+        }
+        p{
+            font-family: 'Söhne Breit';
+            font-size: 18px;
+            line-height: 21px;
+            color: #E9E9E9; 
+        }
+    }
+    .check{
+        background-color: #232323;
+        border-radius: 21px;
+        .borde{
+            border-bottom: 1px solid #494949;
+        }
+        h2{
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+        }
+        h4{
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #C4C4C4;
+            padding: 10px 0px;
+        }
+        p{
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #FFFFFF;
+        }
+        input[type=checkbox] {
+            appearance: none;
+            -webkit-appearance: none;
+            border: 1px solid #9E9E9E;
+            height: 18px;
+            width: 18px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            &::before{
+                content: '';
+                height: 8px;
+                width: 8px;
+                position: absolute;
+                opacity: 2;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                background-color: #F69572;
+                border-radius: 50%;
+            }
+        }
+        label {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #FFFFFF;
+            padding-left: 10px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            @media (min-width:992px) {
+                img{
+                    height: 30px;
+                }
+            }
+            .tarjetas{
+                padding-left: 15px;
+                
+            }
+        }
+        input[type=checkbox]:checked::before {
+            display: flex;
+        }
+        h3{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #686868;
+            width: 100%;
+            text-align: left;
+            padding: 10px 0px;
+        }
+        input[type=text], input[type=number] {
+            background-color: transparent;
+            border: 1px solid #FFFFFF;
+            border-radius: 7px;
+            height: 40px;
+            width: 100%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #686868;
+            box-shadow: none;
+            padding-left: 15px;
+            -webkit-appearance: none;
+            @media (min-width:992px) {
+                height: 60px;
+            }
+            &::placeholder{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                color: #686868;
+            }
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+                -webkit-appearance: none; 
+                margin: 0; 
+            }
+            input[type=number] { 
+                -moz-appearance:textfield; 
+            }
+        }
+        button{
+            background: #dddddd1a;
+            border-radius: 16px;
+            width: 70%;
+            height: 40px;
+            outline: none;
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            border: none;
+            color: #989898;
+        }
+    }
+}

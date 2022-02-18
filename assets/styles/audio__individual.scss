@@ -1,0 +1,208 @@
+@import "imports/styles";
+@import "imports/header__listas";
+@import "imports/audios";
+
+body{
+    background-color: #171717;
+    .audio__seccion{
+        background-image: url('../img/audios_icons/fondo_audio.svg');
+        background-repeat: no-repeat;
+        min-height: 150px;
+        @media (min-width:992px) {
+            min-height: 700px;
+        }
+        .padding__escritorio{
+            @media (min-width:992px) {
+                padding-top: 10%;
+            }
+        }
+        .contenedor__fondo{
+            h2{
+                font-family: 'Söhne Breit';
+                font-size: 24px;
+                line-height: 88%;
+                letter-spacing: -0.02em;
+                color: #C3C3C3;
+                padding: 20px 0px 30px 0px;
+                @media (min-width:992px) {
+                    font-size: 48px;
+                }
+            }
+            h5{
+                font-family: 'Inter';
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                color: #D8D8D8;
+                text-align: left;
+                width: 100%;
+                @media (min-width:992px) {
+                    font-size: 14px;  
+                }
+            }
+            p{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: left;
+                color: #6F6F6F;
+                width: 100%;
+                padding: 5px 0px;
+                @media (min-width:992px) {
+                    font-size: 14px;  
+                }
+            }
+            .borde{
+                border-right: 1px solid #767676;
+            }
+            .detalles__before{
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background-color: #6F6F6F;
+                    border-radius: 50%;
+                    width: 15px;
+                    height: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media (min-width:992px) {
+                        position: relative;
+                        justify-content: start;
+                    }
+                }
+                @media (min-width:992px) {
+                    p{
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .reproductor{
+                @media (min-width:992px) {
+                    padding-top: 100px;
+                }
+                button{
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                }
+                .play{
+                    @media (min-width:992px) {
+                        img{
+                            height: 40px;
+                        }
+                    }
+                }
+                p{
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: #AEAEAE; 
+                }
+                .btn__obtener{
+                    background-color: #2A2A2A;
+                    border-radius: 12px;
+                    border: none;
+                    outline: none;
+                    width: 150px;
+                    height: 30px;
+                    font-family: 'Inter';
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: #B6B6B6;
+                }
+            }
+           
+        }
+    }
+    .reproductor{
+        button{
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+        p{
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #AEAEAE; 
+        }
+    }
+    .contenedor{
+        background-color: #141414;
+        .obtener{
+            padding: 30px 0px 0px 0px;
+            .btn__obtener{
+                background-color: #2A2A2A;
+                border-radius: 12px;
+                border: none;
+                outline: none;
+                width: 100%;
+                height: 30px;
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #B6B6B6;
+            }
+        }
+    }
+    .borde__contenedor{
+        border-bottom: 1px solid #222222;
+        @media (min-width:992px) {
+            border-bottom: 0;
+        }
+        .detalles{
+            @media (min-width:992px) {
+                border-bottom: 1px solid #222222;
+                border-top: 1px solid #222222;
+            }
+           div{
+               padding: 15px 15px;
+               h3{
+                font-family: 'Inter';
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                color: #D8D8D8;
+                padding: 10px 0px;
+                    @media (min-width:992px) {
+                        font-size: 14px;  
+                    }
+                }
+               p{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #6F6F6F;
+                    @media (min-width:992px) {
+                        font-size: 14px;
+                    }
+                }
+           } 
+        }
+    }
+    .versiones{
+        h4{
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #ACACAC;
+            padding-left: 10px;
+            @media (min-width:992px) {
+                font-size: 14px;  
+            }
+        }
+    }
+}
