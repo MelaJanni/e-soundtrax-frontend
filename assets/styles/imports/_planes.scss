@@ -1,0 +1,120 @@
+.plataformas{
+    .titulo{
+        h2{
+            font-family: 'Söhne Breit';
+            font-size: 60px;
+            line-height: 81.9%;
+            text-align: center;
+            color: #E9E9E9;
+            padding-top: 8%;
+        }
+        h3{
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #787878;
+            padding: 50px 0px;
+            width: 40%;
+        }
+    }
+    .div{
+        margin: 10px 0px;
+        span{
+            background: linear-gradient(180deg, #FF997D 0%, #A76CD5 100%);
+            border-radius: 9px;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width:992px) {
+                height: 30px;
+                width: 60px;
+            }
+        }
+        p{
+            margin-left: 15px;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #E9E9E9;
+            min-width:80px;
+            text-align: left;
+        }
+    }
+    .planes{
+        background: radial-gradient(100% 100% at 96% 100%, #958573 8.93%, #5D564E 37.12%, #323232 76.46%, #323232 100%);
+        border: 1px solid #B2B2B2;
+        border-radius: 33px;
+        min-height: 530px;
+        max-width: 500px;
+        padding: 30px 20px;
+        @media (min-width:992px) {
+            padding: 60px 50px;
+            border-radius: 56px;
+        }
+        h5{
+            font-family: 'Söhne Brei't;
+            font-size: 24px;
+            line-height: 21px;
+            text-align: center;
+            color: #C4C4C4;
+        }
+        h3{
+            font-family: 'Söhne Breit';
+            font-size: 34px;
+            line-height: 31px;
+            text-align: center;
+            color: #DDDDDD;
+        }
+        p{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #B2B2B2;
+            padding: 10px 0px 20px 0px;
+        }
+        h4{
+            font-family: 'Söhne Breit';
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #E2E2E2;
+            padding: 20px 0px;
+        }
+        a{  text-decoration: none;
+            outline: none;
+            background-color: #171717;
+            border-radius: 16px;
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #F5F5F5;
+            min-height: 60px;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .borde{
+            border-bottom: 1px solid #676767;
+        }
+    }
+    .plan__anual{
+        background: radial-gradient(100% 100% at 96% 100%, #60937A 8.93%, #4E5D4E 37.12%, #323232 76.46%, #323232 100%);
+    }
+    .plan__life{
+        background: radial-gradient(100% 100% at 96% 100%, #958373 8.93%, #AFAF8B 37.12%, #323232 76.46%, #323232 100%);
+    }
+    .espacio{
+        height: 200px;
+    }
+}

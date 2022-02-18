@@ -304,6 +304,12 @@
   min-height: 280px;
 }
 
+@media (max-width: 992px) {
+  .footer {
+    padding-top: 80px;
+  }
+}
+
 .footer .borde__bottom {
   border-bottom: 1px solid #494949;
 }
@@ -323,6 +329,12 @@
 
 .footer .info .idioma .col {
   max-width: 9%;
+}
+
+@media (max-width: 992px) {
+  .footer .info .idioma .col {
+    max-width: 40%;
+  }
 }
 
 .footer .info .idioma .borde {
@@ -391,6 +403,7 @@
   line-height: 15px;
   color: #6E6E6E;
   margin: 0px 10px;
+  text-align: center;
 }
 
 .footer .copy p:first-child {
@@ -401,6 +414,188 @@
   height: 100%;
   width: 2px;
   background-color: #6E6E6E;
+}
+
+.footer .before {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .before:before {
+  content: '';
+  background-color: #494949;
+  height: 3px;
+  width: 10%;
+  position: absolute;
+  top: 58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plataformas .titulo h2 {
+  font-family: 'Söhne Breit';
+  font-size: 60px;
+  line-height: 81.9%;
+  text-align: center;
+  color: #E9E9E9;
+  padding-top: 8%;
+}
+
+.plataformas .titulo h3 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #787878;
+  padding: 50px 0px;
+  width: 40%;
+}
+
+.plataformas .div {
+  margin: 10px 0px;
+}
+
+.plataformas .div span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF997D), to(#A76CD5));
+  background: linear-gradient(180deg, #FF997D 0%, #A76CD5 100%);
+  border-radius: 9px;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .plataformas .div span {
+    height: 30px;
+    width: 60px;
+  }
+}
+
+.plataformas .div p {
+  margin-left: 15px;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #E9E9E9;
+  min-width: 80px;
+  text-align: left;
+}
+
+.plataformas .planes {
+  background: radial-gradient(100% 100% at 96% 100%, #958573 8.93%, #5D564E 37.12%, #323232 76.46%, #323232 100%);
+  border: 1px solid #B2B2B2;
+  border-radius: 33px;
+  min-height: 530px;
+  max-width: 500px;
+  padding: 30px 20px;
+}
+
+@media (min-width: 992px) {
+  .plataformas .planes {
+    padding: 60px 50px;
+    border-radius: 56px;
+  }
+}
+
+.plataformas .planes h5 {
+  font-family: 'Söhne Brei't;
+  font-size: 24px;
+  line-height: 21px;
+  text-align: center;
+  color: #C4C4C4;
+}
+
+.plataformas .planes h3 {
+  font-family: 'Söhne Breit';
+  font-size: 34px;
+  line-height: 31px;
+  text-align: center;
+  color: #DDDDDD;
+}
+
+.plataformas .planes p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #B2B2B2;
+  padding: 10px 0px 20px 0px;
+}
+
+.plataformas .planes h4 {
+  font-family: 'Söhne Breit';
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #E2E2E2;
+  padding: 20px 0px;
+}
+
+.plataformas .planes a {
+  text-decoration: none;
+  outline: none;
+  background-color: #171717;
+  border-radius: 16px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #F5F5F5;
+  min-height: 60px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plataformas .planes .borde {
+  border-bottom: 1px solid #676767;
+}
+
+.plataformas .plan__anual {
+  background: radial-gradient(100% 100% at 96% 100%, #60937A 8.93%, #4E5D4E 37.12%, #323232 76.46%, #323232 100%);
+}
+
+.plataformas .plan__life {
+  background: radial-gradient(100% 100% at 96% 100%, #958373 8.93%, #AFAF8B 37.12%, #323232 76.46%, #323232 100%);
+}
+
+.plataformas .espacio {
+  height: 200px;
 }
 
 .container-fluid {
@@ -735,143 +930,6 @@
   min-height: 60px;
   max-width: 350px;
   width: 100%;
-}
-
-.container-fluid .plataformas .titulo h2 {
-  font-family: 'Söhne Breit';
-  font-size: 60px;
-  line-height: 81.9%;
-  text-align: center;
-  color: #E9E9E9;
-  padding-top: 8%;
-}
-
-.container-fluid .plataformas .titulo h3 {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  color: #787878;
-  padding: 50px 0px;
-  width: 40%;
-}
-
-.container-fluid .plataformas .col-3 {
-  margin: 10px 0px;
-}
-
-.container-fluid .plataformas .col-3 span {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF997D), to(#A76CD5));
-  background: linear-gradient(180deg, #FF997D 0%, #A76CD5 100%);
-  border-radius: 9px;
-  height: 30px;
-  width: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container-fluid .plataformas .col-3 p {
-  margin-left: 15px;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #E9E9E9;
-  min-width: 80px;
-  text-align: left;
-}
-
-.container-fluid .plataformas .planes {
-  background: radial-gradient(100% 100% at 96% 100%, #958573 8.93%, #5D564E 37.12%, #323232 76.46%, #323232 100%);
-  border: 1px solid #B2B2B2;
-  border-radius: 56px;
-  min-height: 530px;
-  max-width: 500px;
-  padding: 60px 50px;
-}
-
-.container-fluid .plataformas .planes h5 {
-  font-family: 'Söhne Brei't;
-  font-size: 24px;
-  line-height: 21px;
-  text-align: center;
-  color: #C4C4C4;
-}
-
-.container-fluid .plataformas .planes h3 {
-  font-family: 'Söhne Breit';
-  font-size: 34px;
-  line-height: 31px;
-  text-align: center;
-  color: #DDDDDD;
-}
-
-.container-fluid .plataformas .planes p {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #B2B2B2;
-  padding: 10px 0px 20px 0px;
-}
-
-.container-fluid .plataformas .planes h4 {
-  font-family: 'Söhne Breit';
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #E2E2E2;
-  padding: 20px 0px;
-}
-
-.container-fluid .plataformas .planes a {
-  text-decoration: none;
-  outline: none;
-  background-color: #171717;
-  border-radius: 16px;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #F5F5F5;
-  min-height: 60px;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container-fluid .plataformas .planes .borde {
-  border-bottom: 1px solid #676767;
-}
-
-.container-fluid .plataformas .plan__anual {
-  background: radial-gradient(100% 100% at 96% 100%, #60937A 8.93%, #4E5D4E 37.12%, #323232 76.46%, #323232 100%);
-}
-
-.container-fluid .plataformas .plan__life {
-  background: radial-gradient(100% 100% at 96% 100%, #958373 8.93%, #AFAF8B 37.12%, #323232 76.46%, #323232 100%);
-}
-
-.container-fluid .plataformas .espacio {
-  height: 200px;
 }
 
 .container-fluid .crear__cuenta {

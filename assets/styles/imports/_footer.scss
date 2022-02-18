@@ -1,6 +1,9 @@
 .footer{
     background-color: #181818;
     min-height: 280px;
+    @media (max-width:992px) {
+        padding-top: 80px;
+    }
     .borde__bottom{
         border-bottom: 1px solid #494949;
     }
@@ -18,6 +21,9 @@
         .idioma{
             .col{
                 max-width: 9%;
+                @media (max-width:992px) {
+                    max-width: 40%;
+                }
             }
             .borde{
                 border-right: 2px solid #C1BCBC;
@@ -77,6 +83,7 @@
             line-height: 15px;
             color: #6E6E6E;
             margin: 0px 10px;
+            text-align: center;
             &:first-child{
                 margin-left: 0;
             }
@@ -87,4 +94,22 @@
             background-color:  #6E6E6E;
         }
     }
+    .before{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:before{
+            content: '';
+            background-color: #494949;
+            height: 3px;
+            width: 10%;
+            position: absolute;
+            top: 58%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+        
 }

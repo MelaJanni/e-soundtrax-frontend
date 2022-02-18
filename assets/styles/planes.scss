@@ -1,0 +1,140 @@
+@import "imports/header__listas";
+@import "imports/styles";
+@import "imports/footer";
+@import "imports/planes";
+
+body{
+    background-color: #171717;
+    .plataformas{
+        .titulo{
+            h2{
+                padding-top: 50px;
+                @media (max-width:992px) {
+                    font-family: 'Söhne Breit';
+                    font-size: 24px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #D4D4D4;
+                    padding-top: 0;
+                }
+            }
+            h3{
+                padding-bottom: 0;
+                @media (min-width:992px) {
+                    min-width: 800px;
+                }
+            }
+        }
+        .empezar{
+            padding: 40px 0px 50px 0px;
+            button{
+                border: none;
+                outline: none;
+                background-color: rgba(221, 221, 221, 0.1);
+                border-radius: 16px;
+                height: 60px;
+                min-width: 260px;
+                font-family: 'Inter';
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #989898;
+            }
+        }
+        .planes{
+            margin: 20px 0px;
+            @media (min-width:992px) {
+                min-height: 750px;
+            }
+            .incluidos{
+                padding: 0px 0px 20px 0px;
+                h2{
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #E2E2E2;
+                    margin-left: 15px;
+                    @media (min-width:992px) {
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+                }
+                .contenedores{
+                    padding: 10px 0px;
+                }
+            }
+        }
+        .licencia{
+            padding: 50px 0px;
+            @media (min-width:992px) {
+                padding: 150px 0px;
+            }
+            .borde__total{
+                border: 1px solid #C4C4C4;
+                border-radius: 56px;
+                min-height: 300px;
+                padding: 50px 30px;
+                @media (min-width:992px) {
+                    min-height: 240px;
+                    padding: 0px 25px;
+                }
+                h3{
+                    font-family: 'Söhne Breit';
+                    font-size: 34px;
+                    line-height: 31px;
+                    text-align: center;
+                    color: #C4C4C4;
+                }
+                h4{
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: #838383;
+                    padding-top: 15px;
+                }
+                ul{
+                    padding: 0;
+                    li{
+                        font-family: 'Inter';
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #E2E2E2;
+                        padding: 5px 0px;
+                        @media (max-width:992px) {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 12px;
+                            color: #E2E2E2
+                        }
+                    }
+                }
+                a{
+                    background: rgba(221, 221, 221, 0.1);
+                    border-radius: 16px;
+                    text-decoration: none;
+                    height: 70px;
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #989898;
+                    @media (max-width:992px) {
+                        height: 50px;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
