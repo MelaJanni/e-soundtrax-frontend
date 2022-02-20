@@ -59,29 +59,56 @@ header{
             margin-right: 5px;
         }
     }
+    .box{
+        position:relative;
+        background: rgba(221, 221, 221, 0.1);
+        padding: 10px;
+        height: 50px;
+        border-radius: 16px;
+        z-index:0;
+        &::before{
+            content:"";
+            position:absolute;
+            z-index:-1;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            padding: 2px;
+            border-radius: 16px;
+            background: linear-gradient(to top, var(--color2), var(--color1));
+            -webkit-mask: 
+                linear-gradient(#fff 0 0) content-box, 
+                linear-gradient(#fff 0 0);
+                    mask: 
+                linear-gradient(#fff 0 0) content-box, 
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+        &:hover, &:focus{
+            background: #171717;
+            border-radius: 16px;
+            box-shadow: 0px 3px 6px #0F0F0F;
+            &:before{
+                content: none;
+            }
+        }
+        a{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            color: #F5F5F5;
+        }
+    }
     span{
         height: 20px;
         width: 1px;
         background-color: #363535;
         margin: 0px 20px;
-    }
-    .empezar{
-        background: rgba(221, 221, 221, 0.1);
-        border-radius: 16px;
-        height: 40px;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        color: #989898;
-        &::before{
-            content: '';
-            position: absolute;
-            border: inherit;
-            border-image:linear-gradient(180deg, #FF997D 0%, #6CD5CE 100%);
-        }
-
     }
     .busqueda{
         background-color: #262626;

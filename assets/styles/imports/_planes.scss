@@ -103,6 +103,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            &:hover, &:focus{
+                color: #ffffff;
+                background: #0c0c0c;
+            }
         }
         .borde{
             border-bottom: 1px solid #676767;

@@ -5,11 +5,30 @@
     .row__width{
         width: 100%
     }
+    a{
+        cursor: pointer;
+    }
 }
 :root{
     --gris__header: #989898;
     --gris__a:#B2B2B2;
+    --gris__a__hover:#ffff;
+
+
+
+    // BOTONES //
+
+    // NARANJA Y CELESTE //
+    --color1:#ff997d;
+    --color2:#6cd4ce;
+    // NARANJA //
+    --n__1:#ff997d4d;
+    --n__2:#ffa1134d;
 
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Söhne Breit';
+    src: url('../../fonts/SB/SohneBreit-Halbfett.ttf');
+}

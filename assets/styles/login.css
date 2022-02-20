@@ -8,9 +8,23 @@
   width: 100%;
 }
 
+* a {
+  cursor: pointer;
+}
+
 :root {
   --gris__header: #989898;
   --gris__a:#B2B2B2;
+  --gris__a__hover:#ffff;
+  --color1:#ff997d;
+  --color2:#6cd4ce;
+  --n__1:#ff997d4d;
+  --n__2:#ffa1134d;
+}
+
+@font-face {
+  font-family: 'Söhne Breit';
+  src: url("../../fonts/SB/SohneBreit-Halbfett.ttf");
 }
 
 body {

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'SohneBreit-Halbfett';
+  src: url(./SohneBreit-Halbfett.eot);
+  src: url(./SohneBreit-Halbfett.eot?#iefix) format('embedded-opentype'),
+       url(./SohneBreit-Halbfett.otf) format('otf'),
+       url(./SohneBreit-Halbfett.svg#SohneBreit-Halbfett) format('svg'),
+       url(./SohneBreit-Halbfett.ttf) format('truetype'),
+       url(./SohneBreit-Halbfett.woff) format('woff'),
+       url(./SohneBreit-Halbfett.woff2) format('woff2');
+}

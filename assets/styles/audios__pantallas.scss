@@ -15,13 +15,44 @@ body{
                 font-size: 14px;
                 line-height: 17px;
                 color: #989898;
+                &:hover, &:focus{
+                    color: #fff;
+                }
             }
             .btn{
-                border-radius: 16px;
-                border: 1px solid #fff;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position:relative;
+                background: transparent;
+                padding: 10px;
+                height: 35px;
+                min-width: 100px;
+                border-radius: 16px;
+                z-index:0;
+                &::before{
+                    content:"";
+                    position:absolute;
+                    z-index:-1;
+                    top:0;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                    padding: 2px;
+                    border-radius: 16px;
+                    background: linear-gradient(to top, var(--n__2), var(--n__1));
+                    -webkit-mask: 
+                        linear-gradient(#fff 0 0) content-box, 
+                        linear-gradient(#fff 0 0);
+                            mask: 
+                        linear-gradient(#fff 0 0) content-box, 
+                        linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                }
+                &:hover, &:focus{
+                    color: #fff;
+                }
                 img{
                     margin-right: 5px;
                 }
