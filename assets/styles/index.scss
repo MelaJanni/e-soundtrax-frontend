@@ -5,8 +5,6 @@
 @import "imports/planes";
 
 :root{
-    --color1:#ff997d;
-    --color2:#6cd4ce;
     --gardient1: -webkit-linear-gradient(top, var(--color1) 0%, bottom var(--color2) 100%);
 }
 .container-fluid{

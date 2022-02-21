@@ -97,8 +97,11 @@
         }
         span{
             height: 100%;
-            width: 2px;
-            background-color:  #6E6E6E;
+            width: 5px;
+            background-color:  #ffffff;
+            @media (max-width:992px) {
+                display: none;
+            }
         }
     }
     .before{
@@ -116,6 +119,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        @media (min-width:992px) {
+           &::before{
+               content: none;
+           }
         }
     }
         

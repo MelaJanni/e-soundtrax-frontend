@@ -466,8 +466,14 @@
 
 .footer .copy span {
   height: 100%;
-  width: 2px;
-  background-color: #6E6E6E;
+  width: 5px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .footer .copy span {
+    display: none;
+  }
 }
 
 .footer .before {
@@ -499,6 +505,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 992px) {
+  .footer .before::before {
+    content: none;
+  }
 }
 
 .plataformas .titulo h2 {
@@ -658,8 +670,6 @@
 }
 
 :root {
-  --color1:#ff997d;
-  --color2:#6cd4ce;
   --gardient1: -webkit-linear-gradient(top, var(--color1) 0%, bottom var(--color2) 100%);
 }
 

@@ -50,6 +50,10 @@ header ul li img {
   margin-left: 5px;
 }
 
+header ul li:hover, header ul li:focus {
+  color: #fff;
+}
+
 header ul li ul {
   background-color: #171717;
   -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.79);
@@ -101,7 +105,7 @@ header a {
 }
 
 header a:hover, header a:focus {
-  color: inherit;
+  color: #fff;
 }
 
 header a img {
